@@ -9,7 +9,7 @@ jobs:
     outputs:
       result: ${{ steps.generate.outputs.result }}
   after:
-    runs-on: ubuntus-latest
+    runs-on: ubuntu-latest
     needs: [before]
     steps:
       - env:
